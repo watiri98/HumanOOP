@@ -30,15 +30,16 @@ public class MainActivity extends AppCompatActivity {
         Human student = new Human("Maggie",50,19);
         student.eat();
         student.sleep();
-        student.sleep();
+        student.sleep(8);
         student.speak("I will be coming tomorrow");
         student.birthday();
+        Log.d("Human","student's age is " + student.getAge());
 
-        Anna driver = new Anna("Shawn",60,30,160);
-        driver.eat();
-        Log.d("Anna","I will have eggs for lunch");
-        driver.birthday();
-        Log.d("Anna","My birthday is in june 2023");
+//        Anna driver = new Anna("Shawn",60,30,160);
+//        driver.eat();
+//        Log.d("Human","Anna's new weight is" + driver.getWeight());
+//        driver.birthday();
+//        Log.d("Anna","Anna's age is" + driver.getAge());
     }
 
     @Override
